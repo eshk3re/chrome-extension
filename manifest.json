@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Email Domain Checker",
+  "version": "1.0",
+  "description": "Checks recipient's domain",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://e.mail.ru/compose","https://e.mail.ru/inbox","https://e.mail.ru/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
